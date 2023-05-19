@@ -1,0 +1,29 @@
+###
+GET http://localhost:3001/persons/101 HTTP/1.1
+
+###
+POST http://localhost:3001/personas HTTP/1.1
+Content-Type: application/json
+[{
+  "nombre": "scott",
+  "apellido": "ramirez",
+  "dni": "72664618",
+  "edad": 21,
+  "direccion": "Calle lagunas",
+  "profesion": "Software developer "
+}]
+
+###
+DELETE http://localhost:3001/api/6 HTTP/1.1
+
+###
+PATCH http://localhost:3001/api/101 HTTP/1.1
+Content-Type: application/json
+{
+  "nombre": " anthony scott",
+  "apellido": "ramirez sias",
+  "dni": "72664617",
+  "edad": 20,
+  "direccion": "Calle lagunas Lt1J",
+  "profesion": "Software developer "
+}
